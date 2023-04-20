@@ -1,0 +1,71 @@
+body {
+  background-image: url('https://imageio.forbes.com/specials-images/dam/imageserve/1162079707/960x0.jpg?format=jpg&width=960');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    opacity: 0.5;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Add some spacing between form fields */
+  div {
+    margin-bottom: 15px;
+  }
+  
+  /* Add some space around the form */
+  .form-container {
+    padding: 20px;
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    background-color: #000000;
+    color: white;
+    font-style: initial;
+    font-size: large;
+    border: 1px solid #ffffff
+  }
+  
+  /* Add a clearfix to prevent floated elements from overflowing */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  h1{
+    text-align: center;
+    text-decoration: solid;
+    color: rgb(237, 238, 209);
+  }

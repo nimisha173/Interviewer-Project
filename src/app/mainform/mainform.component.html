@@ -1,0 +1,55 @@
+<body>
+<h1>
+    Interviewer Form
+</h1>
+<form (ngSubmit)="scheduleInterview()" #interviewForm="ngForm"class="form-container" style="max-width: 500px; margin: 0 auto;">
+  
+    <div >
+    <label for="interviewer-id">Interviewer ID:</label>
+    <input type="text" id="interviewer-id" name="interviewerId" [(ngModel)]="interviewer.interviewerId" required>
+  </div>
+  <div>
+    <label for="interviewer-name">Interviewer Name:</label>
+    <input type="text" id="interviewer-name" name="interviewerName" [(ngModel)]="interviewer.interviewerName" required>
+  </div>
+  <div>
+    <label for="interviewer-email">Interviewer Email:</label>
+    <input type="email" id="interviewer-email" name="interviewerEmail" [(ngModel)]="interviewer.interviewerEmail" required >
+
+  </div>
+  <!-- <div>
+  <label for="interviewer-email">Interviewer Email:</label>
+  <input type="email" id="interviewer-email" name="interviewerEmail" [(ngModel)]="interviewer.interviewerEmail" >
+  <label class="text-danger" *ngIf="form.submitted && interviewerEmail.errors?.['required']">email is required</label>
+    <div *ngIf="form.get('interviewerEmail').errors.interviewerEmail">Email is invalid.</div> -->
+  
+  <div>
+    <label for="interviewer-role">Interviewer Role:</label>
+    <input type="text" id="interviewer-role" name="interviewerRole" [(ngModel)]="interviewer.interviewerRole" required>
+  </div>
+  <div>
+    <label for="interviewer-skills">Interviewer Skills:</label>
+    <input type="text" id="interviewer-skills" name="interviewerSkills" [(ngModel)]="interviewer.interviewerSkills" required>
+  </div>
+  <div>
+    <label for="interviewer-experience">Interviewer Experience:</label>
+    <input type="number" id="interviewer-experience" name="interviewerExperience" [(ngModel)]="interviewer.interviewerExperience" required>
+  </div>
+  <div>
+    <label for="available-date">Available Date:</label>
+    <input type="date" id="available-date" name="availableDate" [(ngModel)]="interviewer.availableDate" required>
+  </div>
+  <div>
+    <label for="available-time">Available Time:</label>
+    <input type="time" id="available-time" name="availableTime" [(ngModel)]="interviewer.availableTime" required>
+</div>
+ 
+  <button type="submit" (click)="onSubmit()" [disabled]="!interviewForm.form.valid">Submit </button><br>
+  
+  <button type="submit" (click)="move()" [disabled]="!interviewForm.form.valid">move to ubdate</button>
+  
+  
+ 
+</form>
+<!-- <div><router-outlet></router-outlet></div> -->
+</body>
