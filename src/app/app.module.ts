@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainformComponent } from './mainform/mainform.component';
 import { UpdateformComponent } from './updateform/updateform.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { UpdateformComponent } from './updateform/updateform.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule
   ],
   providers: [],
